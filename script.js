@@ -6,6 +6,6 @@ const res = await fetch('https://hubeau.eaufrance.fr/api/v1/etat_piscicole/obser
 const record = await res.json()
 
 console.log('record', record)
-    document.getElementById("poisson").innerHTML = record.data.map(item => '<li>${item.libelle_commune}</li>' ).join('');
+    document.getElementById("poisson").innerHTML = record.data.map(item => `<li>${item.libelle_commune}</li>`).join('');
 }
 fetchData();
