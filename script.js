@@ -7,4 +7,4 @@ const record = await res.json()
 
 console.log('record', record)
 }
-fetchDate();
+fetchData();
